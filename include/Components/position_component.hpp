@@ -1,8 +1,12 @@
+#ifndef POSITION_COMPONENT_HPP
+#define POSITION_COMPONENT_HPP
+
 #include "component.hpp"
 #include <memory>
 
 namespace components {
     class PositionComponent : public Component {
+    public:
         PositionComponent();
 
         explicit PositionComponent(std::pair<unsigned, unsigned> position);
@@ -27,3 +31,5 @@ namespace components {
         std::pair<unsigned, unsigned> position_;
     };
 }
+
+#endif

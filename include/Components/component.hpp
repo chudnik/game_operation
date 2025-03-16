@@ -6,9 +6,6 @@
 
 namespace components {
     class Component {
-    private:
-        std::string name_;
-
     public:
         Component();
 
@@ -17,6 +14,9 @@ namespace components {
         [[nodiscard]] const std::string &get_name() const;
 
         virtual ~Component() = default;
+
+    private:
+        std::string name_;
     };
 }  // namespace components
 

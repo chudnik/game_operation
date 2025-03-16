@@ -1,3 +1,6 @@
+#ifndef HEALTH_COMPONENT_HPP
+#define HEALTH_COMPONENT_HPP
+
 #include "component.hpp"
 
 namespace components {
@@ -28,3 +31,5 @@ namespace components {
         double max_health_;
     };
 }
+
+#endif

@@ -34,7 +34,7 @@ namespace components {
     unsigned int PositionComponent::get_y() const { return position_.second; }
 
     void PositionComponent::shift(const unsigned int x, const unsigned int y) {
-        position_.first+=x;
+        position_.first += x;
         position_.second += y;
     }
 }
